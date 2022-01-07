@@ -4,7 +4,7 @@
 #
 Name     : pypi-jupyterlab_server
 Version  : 2.10.2
-Release  : 66
+Release  : 67
 URL      : https://files.pythonhosted.org/packages/c2/2b/bdc04308d652a5f0f1dfa16362c5885436fb9cfe9846fde8bc4fcec092b1/jupyterlab_server-2.10.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/c2/2b/bdc04308d652a5f0f1dfa16362c5885436fb9cfe9846fde8bc4fcec092b1/jupyterlab_server-2.10.2.tar.gz
 Summary  : A set of server components for JupyterLab and JupyterLab like applications .
@@ -13,13 +13,7 @@ License  : BSD-3-Clause
 Requires: pypi-jupyterlab_server-license = %{version}-%{release}
 Requires: pypi-jupyterlab_server-python = %{version}-%{release}
 Requires: pypi-jupyterlab_server-python3 = %{version}-%{release}
-BuildRequires : anyio
 BuildRequires : buildreq-distutils3
-Provides: jupyterlab_server
-Provides: jupyterlab_server-python
-Provides: jupyterlab_server-python3
-BuildRequires : jsonschema
-BuildRequires : jupyter_server
 BuildRequires : pypi(babel)
 BuildRequires : pypi(entrypoints)
 BuildRequires : pypi(jinja2)
@@ -80,7 +74,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641450933
+export SOURCE_DATE_EPOCH=1641521683
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
