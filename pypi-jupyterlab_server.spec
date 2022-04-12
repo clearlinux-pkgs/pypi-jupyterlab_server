@@ -4,7 +4,7 @@
 #
 Name     : pypi-jupyterlab_server
 Version  : 2.12.0
-Release  : 73
+Release  : 74
 URL      : https://files.pythonhosted.org/packages/22/42/b01b5ce8633bd6513cc5fda7d4a1cf9b50cb295561f022b76bd022bd2bfd/jupyterlab_server-2.12.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/22/42/b01b5ce8633bd6513cc5fda7d4a1cf9b50cb295561f022b76bd022bd2bfd/jupyterlab_server-2.12.0.tar.gz
 Summary  : A set of server components for JupyterLab and JupyterLab like applications .
@@ -74,7 +74,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1648497083
+export SOURCE_DATE_EPOCH=1649775120
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
