@@ -4,7 +4,7 @@
 #
 Name     : pypi-jupyterlab_server
 Version  : 2.18.0
-Release  : 97
+Release  : 98
 URL      : https://files.pythonhosted.org/packages/7f/dd/072ac70a4db653ba076f3537fb1067e121b3f4625c84c1b08da3ae26901b/jupyterlab_server-2.18.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/7f/dd/072ac70a4db653ba076f3537fb1067e121b3f4625c84c1b08da3ae26901b/jupyterlab_server-2.18.0.tar.gz
 Summary  : A set of server components for JupyterLab and JupyterLab like applications.
