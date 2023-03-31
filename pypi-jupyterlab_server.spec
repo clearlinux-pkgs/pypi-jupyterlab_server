@@ -4,10 +4,10 @@
 # Using build pattern: pyproject
 #
 Name     : pypi-jupyterlab_server
-Version  : 2.21.0
-Release  : 101
-URL      : https://files.pythonhosted.org/packages/8c/bf/364810f3a609b11e17b9b8080f0b339b71303aff5a59f5d5a54ca3e1ed45/jupyterlab_server-2.21.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/8c/bf/364810f3a609b11e17b9b8080f0b339b71303aff5a59f5d5a54ca3e1ed45/jupyterlab_server-2.21.0.tar.gz
+Version  : 2.22.0
+Release  : 102
+URL      : https://files.pythonhosted.org/packages/16/5a/694e86cfdb6b5689ea892226d4285954838babc49665a4c61152bf6ac8e9/jupyterlab_server-2.22.0.tar.gz
+Source0  : https://files.pythonhosted.org/packages/16/5a/694e86cfdb6b5689ea892226d4285954838babc49665a4c61152bf6ac8e9/jupyterlab_server-2.22.0.tar.gz
 Summary  : A set of server components for JupyterLab and JupyterLab like applications.
 Group    : Development/Tools
 License  : BSD-3-Clause
@@ -61,10 +61,10 @@ python3 components for the pypi-jupyterlab_server package.
 
 
 %prep
-%setup -q -n jupyterlab_server-2.21.0
-cd %{_builddir}/jupyterlab_server-2.21.0
+%setup -q -n jupyterlab_server-2.22.0
+cd %{_builddir}/jupyterlab_server-2.22.0
 pushd ..
-cp -a jupyterlab_server-2.21.0 buildavx2
+cp -a jupyterlab_server-2.22.0 buildavx2
 popd
 
 %build
@@ -72,7 +72,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1679585674
+export SOURCE_DATE_EPOCH=1680272869
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
