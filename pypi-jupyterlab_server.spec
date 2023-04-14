@@ -4,10 +4,10 @@
 # Using build pattern: pyproject
 #
 Name     : pypi-jupyterlab_server
-Version  : 2.22.0
-Release  : 102
-URL      : https://files.pythonhosted.org/packages/16/5a/694e86cfdb6b5689ea892226d4285954838babc49665a4c61152bf6ac8e9/jupyterlab_server-2.22.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/16/5a/694e86cfdb6b5689ea892226d4285954838babc49665a4c61152bf6ac8e9/jupyterlab_server-2.22.0.tar.gz
+Version  : 2.22.1
+Release  : 103
+URL      : https://files.pythonhosted.org/packages/61/21/030537ac23f669ef80b0cec92a1330a25d17f55b086e18003ab06e3602da/jupyterlab_server-2.22.1.tar.gz
+Source0  : https://files.pythonhosted.org/packages/61/21/030537ac23f669ef80b0cec92a1330a25d17f55b086e18003ab06e3602da/jupyterlab_server-2.22.1.tar.gz
 Summary  : A set of server components for JupyterLab and JupyterLab like applications.
 Group    : Development/Tools
 License  : BSD-3-Clause
@@ -22,7 +22,6 @@ BuildRequires : pypi(hatchling)
 
 %description
 # jupyterlab server
-[![codecov](https://codecov.io/gh/jupyterlab/jupyterlab_server/branch/main/graph/badge.svg?token=4fjcFj91Le)](https://codecov.io/gh/jupyterlab/jupyterlab_server)
 [![Build Status](https://github.com/jupyterlab/jupyterlab_server/workflows/Tests/badge.svg?branch=master)](https://github.com/jupyterlab/jupyterlab_server/actions?query=branch%3Amaster+workflow%3A%22Tests%22)
 [![Documentation Status](https://readthedocs.org/projects/jupyterlab_server/badge/?version=stable)](http://jupyterlab_server.readthedocs.io/en/stable/)
 
@@ -61,10 +60,10 @@ python3 components for the pypi-jupyterlab_server package.
 
 
 %prep
-%setup -q -n jupyterlab_server-2.22.0
-cd %{_builddir}/jupyterlab_server-2.22.0
+%setup -q -n jupyterlab_server-2.22.1
+cd %{_builddir}/jupyterlab_server-2.22.1
 pushd ..
-cp -a jupyterlab_server-2.22.0 buildavx2
+cp -a jupyterlab_server-2.22.1 buildavx2
 popd
 
 %build
@@ -72,7 +71,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1680272869
+export SOURCE_DATE_EPOCH=1681485207
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
