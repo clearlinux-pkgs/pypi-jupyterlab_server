@@ -4,10 +4,10 @@
 # Using build pattern: pyproject
 #
 Name     : pypi-jupyterlab_server
-Version  : 2.22.1
-Release  : 103
-URL      : https://files.pythonhosted.org/packages/61/21/030537ac23f669ef80b0cec92a1330a25d17f55b086e18003ab06e3602da/jupyterlab_server-2.22.1.tar.gz
-Source0  : https://files.pythonhosted.org/packages/61/21/030537ac23f669ef80b0cec92a1330a25d17f55b086e18003ab06e3602da/jupyterlab_server-2.22.1.tar.gz
+Version  : 2.23.0
+Release  : 104
+URL      : https://files.pythonhosted.org/packages/02/65/f7ba44dc74f611b1d00fb37ed1ad0069edeb353a0f0cc7214e3014575b85/jupyterlab_server-2.23.0.tar.gz
+Source0  : https://files.pythonhosted.org/packages/02/65/f7ba44dc74f611b1d00fb37ed1ad0069edeb353a0f0cc7214e3014575b85/jupyterlab_server-2.23.0.tar.gz
 Summary  : A set of server components for JupyterLab and JupyterLab like applications.
 Group    : Development/Tools
 License  : BSD-3-Clause
@@ -23,7 +23,7 @@ BuildRequires : pypi(hatchling)
 %description
 # jupyterlab server
 [![Build Status](https://github.com/jupyterlab/jupyterlab_server/workflows/Tests/badge.svg?branch=master)](https://github.com/jupyterlab/jupyterlab_server/actions?query=branch%3Amaster+workflow%3A%22Tests%22)
-[![Documentation Status](https://readthedocs.org/projects/jupyterlab_server/badge/?version=stable)](http://jupyterlab_server.readthedocs.io/en/stable/)
+[![Documentation Status](https://readthedocs.org/projects/jupyterlab-server/badge/?version=stable)](http://jupyterlab-server.readthedocs.io/en/stable/)
 
 %package license
 Summary: license components for the pypi-jupyterlab_server package.
@@ -60,10 +60,10 @@ python3 components for the pypi-jupyterlab_server package.
 
 
 %prep
-%setup -q -n jupyterlab_server-2.22.1
-cd %{_builddir}/jupyterlab_server-2.22.1
+%setup -q -n jupyterlab_server-2.23.0
+cd %{_builddir}/jupyterlab_server-2.23.0
 pushd ..
-cp -a jupyterlab_server-2.22.1 buildavx2
+cp -a jupyterlab_server-2.23.0 buildavx2
 popd
 
 %build
@@ -71,15 +71,15 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1681485207
+export SOURCE_DATE_EPOCH=1686669272
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
-export CFLAGS="$CFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
-export FCFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
-export FFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
-export CXXFLAGS="$CXXFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
+export CFLAGS="$CFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
+export FCFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
+export FFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
+export CXXFLAGS="$CXXFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 export MAKEFLAGS=%{?_smp_mflags}
 python3 -m build --wheel --skip-dependency-check --no-isolation
 pushd ../buildavx2/
