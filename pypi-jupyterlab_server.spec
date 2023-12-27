@@ -7,7 +7,7 @@
 #
 Name     : pypi-jupyterlab_server
 Version  : 2.25.2
-Release  : 109
+Release  : 110
 URL      : https://files.pythonhosted.org/packages/32/d5/f59cc812a142cc1e8bd751a8f07d7c2b974f89c72fca2ac43febab874ee9/jupyterlab_server-2.25.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/32/d5/f59cc812a142cc1e8bd751a8f07d7c2b974f89c72fca2ac43febab874ee9/jupyterlab_server-2.25.2.tar.gz
 Summary  : A set of server components for JupyterLab and JupyterLab like applications.
